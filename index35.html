@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Задание 2 </title>
+</head>
+<body>
+<script>
+    var mushroomColor = prompt("Какого цвета гриб?").toLowerCase();
+    var mushroomSkirt = prompt("Есть ли у гриба юбка?(да/нет)").toLowerCase();
+    var mushroom;
+    
+		if(mushroomColor =='белый' && mushroomSkirt =='нет'){
+            mushroom="1";
+        }
+		if(mushroomColor =='красный' && mushroomSkirt =='да'){
+            mushroom="2";
+        }
+		if(mushroomColor =='красный' && mushroomSkirt =='нет'){
+            mushroom="3";
+        }
+    
+		switch(mushroom) {
+			case "1":
+				alert('Вы нашли белый гриб'); break;
+			case "2":
+				alert('А не мухомор ли это?'); break;
+			case "3":
+				alert('Может, это подосиновик'); break;
+			default:
+				alert('С грибами надо быть внимательным');
+		}
+	</script>
+</body>
+</html>

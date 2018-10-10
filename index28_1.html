@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пример работы с пользователем</title>
+</head>
+<body>
+	Введите слово.<br>
+<script>
+	where = window.prompt("Куда заглянем сегодня?");
+	where=where.toLowerCase();
+
+	if(where == "вконтакте"|| where == "vk"){
+		window.location="http://www.vk.com";
+	}else if(where == "одноклассники"||where == "ok"){
+		window.location="http://www.ok.ru"; 
+	}else if(where == "фейсбук"||where == "facebook"){
+		window.location="http://www.facebook.com";
+	}else if(where == "инстаграм"||where == "instagram"){
+		window.location="http://www.instagram.com";
+	}else if(where == "твиттер"||where == "twitter"){
+		window.location="http://www.twitter.com";
+	} else{
+		window.location="http://www.exam.by";
+	}
+
+</script>
+</body>
+</html>
