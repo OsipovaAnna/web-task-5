@@ -1,26 +1,33 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Пример 31</title>
-    </head>
-    <body>
-        <script>
-            var n=prompt('Введите число n: ');
-            var z=1; //z хранит результат n!
-            if (n>1 && !isNaN(n) && n!='\u0020' && n!='') {
-                var i=2;
-                do {
-                z=z*i;
+
+<head>
+    <title>Пример 31</title>
+</head>
+
+<body>
+    <script>
+        var n = prompt('Введите число n: ');
+        var z = 1; //z хранит результат n!
+        if (n >= 171) {
+            alert('Не нужно спать на клавиатуре) Введите число поменьше, пoжалуйста (до 170)');
+        } else
+        if (n > 1 && !isNaN(n) && n != '\u0020' && n != '') {
+            var i = 2;
+            do {
+                z = z * i;
                 i++;
-                }
-                while (i<=+n);
-                alert('Факториал числа '+n+' равен '+z);
-            } else if (n=='0' || n=='1'){
-                z=1;
-                alert('Факториал числа '+n+' равен '+z);
-            } else {
-            alert('Вы ввели недопустимое число или не число');
             }
-        </script>
-    </body>
+            while (i <= +n);
+            alert('Факториал числа ' + n + ' равен ' + z);
+            }else if (n == '0' || n == '1') {
+            z = 1;
+            alert('Факториал числа ' + n + ' равен ' + z);
+        } else {
+            alert('Вы ввели недопустимое число или не число');
+        }
+
+    </script>
+</body>
+
 </html>
